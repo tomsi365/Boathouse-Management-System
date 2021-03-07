@@ -1,0 +1,229 @@
+.title{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 150px;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: lightgrey;
+}
+
+.details-button{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+
+    width: 150px;
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+.details-button:hover{
+    color: white;
+    cursor:pointer;
+}
+
+.logout{
+    position: absolute;
+    left: 50px;
+    top: 200px;
+
+    width: 150px;
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightcoral;
+}
+
+.logout:hover{
+    color: white;
+    cursor:pointer;
+}
+
+.notification-button{
+    background-color:transparent;
+    position: absolute;
+    left: 50px;
+    top: 260px;
+    display: block;
+    border: 0px;
+}
+
+.notification-img:hover{
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+}
+
+.notification-img{
+    background-color:transparent;
+    width: 40px;
+    height: 40px;
+}
+
+.option
+{
+    position: absolute;
+    top: 50px;
+
+    display: none;
+    width: 170px;
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    background-color: sandybrown;
+}
+
+.option:hover
+{
+    color: white;
+    cursor:pointer;
+}
+
+.text{
+    position: absolute;
+    top: 150px;
+    left: 265px;
+
+    width:1060px;
+    min-height: 700px;
+    padding: 5px;
+    background-color: lightblue;
+    color: black;
+    font-size: 18px;
+}
+
+p{
+    display: none;
+}
+
+h3{
+    display: none;
+}
+
+
+table {
+    border-spacing: 0px;
+    width: 90%;
+    margin: auto;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid black;
+    word-break: break-word;
+    padding: 5px;
+}
+
+.green-small-button{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+.green-small-button:hover
+{
+    color: white;
+    cursor:pointer;
+}
+
+.red-small-button{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightcoral;
+}
+
+.red-small-button:hover
+{
+    color: white;
+    cursor:pointer;
+}
+
+.yellow-small-button{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: yellow;
+}
+
+.yellow-small-button:hover
+{
+    color: lightgrey;
+    cursor:pointer;
+}
+
+.grey-small-button{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.grey-small-button:hover
+{
+    color: white;
+    cursor:pointer;
+}
+
+.hidden-grey-small-button{
+    visibility: hidden;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightgrey;
+}
+
+.hidden-grey-small-button:hover
+{
+    color: white;
+    cursor:pointer;
+}
+
+.darkgreen-small-button{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: darkgreen;
+}
+
+.darkgreen-small-button:hover
+{
+    background-color: black;
+    cursor:pointer;
+}
+
+.form-field{
+    font-size: 18px;
+}
+
+.hidden-form-field{
+    visibility: hidden;
+    font-size: 18px;
+    color: red;
+}
+
+input{
+    font-size: 18px;
+}
+
+

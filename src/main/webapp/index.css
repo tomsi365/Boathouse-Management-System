@@ -1,0 +1,63 @@
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.title{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 150px;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: lightgrey;
+}
+
+.form{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+
+    width: 225px;
+    height: 170px;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.form-field{
+    font-size: 26px;
+}
+
+input{
+    width: 215px;
+    font-size: 26px;
+}
+
+.hidden-form-field{
+    visibility: hidden;
+    font-size: 26px;
+    color: red;
+}
+
+.login{
+    position: absolute;
+    top: 340px;
+    left: 50px;
+
+    width: 150px;
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+.login:hover{
+    color: white;
+    cursor:pointer;
+}
+
+
+

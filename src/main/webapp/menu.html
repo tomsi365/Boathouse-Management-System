@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <link rel="stylesheet" type="text/css" href="details.css"/>
+    <link rel="stylesheet" type="text/css" href="members.css"/>
+    <link rel="stylesheet" type="text/css" href="boats.css"/>
+    <link rel="stylesheet" type="text/css" href="windows.css"/>
+    <link rel="stylesheet" type="text/css" href="regs.css"/>
+    <link rel="stylesheet" type="text/css" href="placements.css"/>
+    <link rel="stylesheet" type="text/css" href="alerts.css"/>
+
+    <title>Menu</title>
+</head>
+<body>
+
+<div class="title">Menu</div>
+
+<button class="details-button" id="details-button">Details</button>
+<a href="logout"><button class="logout" id="logout">Logout</button></a>
+
+<button class="option" id="members-button">Members</button>
+<button class="option" id="boats-button">Boats</button>
+<button class="option" id="windows-button">Windows</button>
+<button class="option" id="registrations-button">Registrations</button>
+<button class="option" id="placements-button">Placements</button>
+<button class="option" id="alerts-button">Notifications</button>
+<button class="notification-button" id="notification-button">
+    <img class="notification-img" id="notification-img" src="img1.png">
+</button>
+
+<div class="text" id="text">
+
+    <p id="manager-text">
+    Hello !<br>
+    Welcome to Manager Menu ,<br>
+    You can edit your details .<br>
+    You can manage : members,boats,windows,registrations and placements - lists .<br>
+    You can also make alerts !<br>
+    </p>
+
+    <p id="user-text">
+        Hello !<br>
+        Welcome to User Menu ,<br>
+        You can edit your details .<br>
+    </p>
+
+    <h3 id="sub-title"></h3>
+
+    <br>
+    <br>
+
+    <div class="members-list" id="members-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="add">add</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>email</th>
+                <th>password</th>
+                <th>age</th>
+                <th>phone</th>
+                <th>level</th>
+                <th>is Has Private Boat</th>
+                <th>private Boat Serial Number</th>
+                <th>joining Date</th>
+                <th>expiry Date</th>
+                <th>is Manger</th>
+                <th>notes</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="boats-list" id="boats-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="add">add</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>serialNumber</th>
+                <th>name</th>
+                <th>type</th>
+                <th>is Owned</th>
+                <th>is Coxswain</th>
+                <th>is Sea Boat</th>
+                <th>is Wide Boat</th>
+                <th>is Disabled</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="windows-list" id="windows-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="add">add</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>name</th>
+                <th>begin</th>
+                <th>end</th>
+                <th>isSeaBoat</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="placements-list" id="placements-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>reg Id</th>
+                <th>member Id</th>
+                <th>req Day</th>
+                <th>req Month</th>
+                <th>req Year</th>
+                <th>window</th>
+                <th>registration Date</th>
+                <th>friends</th>
+                <th>types</th>
+                <th>boat</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="regs-list" id="regs-list">
+        <div class="hidden-form-field" name="hidden-description">
+            Mark 2 registrations , by clicking on the row , in order to unit .
+            <br>
+            Click again in order to cancel mark .
+        </div>
+        <br>
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="add">add</button>
+        <button class="hidden-grey-small-button" name="unit">unit</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr name="first-row">
+                <th>reg Id</th>
+                <th>mem Id</th>
+                <th>req Day</th>
+                <th>req Month</th>
+                <th>req Year</th>
+                <th>window</th>
+                <th>reg Date</th>
+                <th>friends</th>
+                <th>types</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="alerts-list" id="alerts-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="add">add</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>id</th>
+                <th>date</th>
+                <th>content</th>
+                <th>delete</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="alerts-list" id="personal-alerts-list">
+        <div class="hidden-form-field" name="hidden-note"></div>
+        <br>
+        <button class="green-small-button" name="refresh">refresh</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>id</th>
+                <th>date</th>
+                <th>content</th>
+                <th>source</th>
+                <th>is read</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="details-form" id="details-form">
+        <div class="form-field">name :</div>
+        <input type="text" name="name">
+        <div class="hidden-form-field" name="hidden-name"></div>
+
+        <div class="form-field">phone :</div>
+        <input type="text" name="phone">
+        <div class="hidden-form-field" name="hidden-phone"></div>
+
+        <div class="form-field">email :</div>
+        <input type="text" name="email">
+        <div class="hidden-form-field" name="hidden-email"></div>
+
+        <div class="form-field">password :</div>
+        <input type="text" name="password">
+        <div class="hidden-form-field" name="hidden-password"></div>
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="submit">submit</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="member-form" id="member-form">
+        <div class="form-field">name :</div>
+        <input type="text" name="name">
+        <div class="hidden-form-field" name="hidden-name"></div>
+
+        <div class="form-field">age :</div>
+        <input type="number" min="18" max="65" name="age">
+
+        <div class="form-field">level :</div>
+        <input type="radio" name="level" value="BEGINNER"><span>BEGINNER</span>
+        <input type="radio" name="level" value="NORMAL"><span>NORMAL</span>
+        <input type="radio" name="level" value="EXPERT" checked="true"><span>EXPERT</span>
+
+        <div class="form-field">expiryDate :</div>
+        <input type="date" name="date">
+
+        <div class="form-field">phone :</div>
+        <input type="text" name="phone">
+        <div class="hidden-form-field" name="hidden-phone"></div>
+
+        <div class="form-field">email :</div>
+        <input type="text" name="email">
+        <div class="hidden-form-field" name="hidden-email"></div>
+
+        <div class="form-field">password :</div>
+        <input type="text" name="password">
+        <div class="hidden-form-field" name="hidden-password"></div>
+
+        <div class="form-field">isManager :</div>
+        <input type="checkbox" name="is-manager">
+
+        <div class="form-field">notes :</div>
+        <textarea cols="50" rows="15" name="notes"></textarea>
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="submit">submit</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="boat-form" id="boat-form">
+        <div class="form-field">name :</div>
+        <input type="text" name="name">
+
+        <div class="form-field">type :</div>
+        <input type="radio" name="type" value="SINGLE"><span>SINGLE</span>
+        <input type="radio" name="type" value="DOUBLE"><span>DOUBLE</span>
+        <input type="radio" name="type" value="DOUBLE_ONE_PADDLE"><span>DOUBLE_ONE_PADDLE</span>
+        <br>
+        <input type="radio" name="type" value="QUARTET"><span>QUARTET</span>
+        <input type="radio" name="type" value="QUARTET_ONE_PADDLE"><span>QUARTET_ONE_PADDLE</span>
+        <input type="radio" name="type" value="EIGHT"><span>EIGHT</span>
+        <input type="radio" name="type" value="EIGHT_ONE_PADDLE" checked="true"><span>EIGHT_ONE_PADDLE</span>
+
+        <div class="form-field">isWideBoat :</div>
+        <input type="checkbox" name="is-wideBoat">
+
+        <div class="form-field">isSeaBoat :</div>
+        <input type="checkbox" name="is-seaBoat">
+
+        <div class="form-field">isCoxswain :</div>
+        <input type="checkbox" name="is-coxswain">
+
+        <div class="form-field">isDisabled :</div>
+        <input type="checkbox" name="is-disabled">
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="submit">submit</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="window-form" id="window-form">
+        <div class="form-field">name :</div>
+        <input type="text" name="name">
+
+        <div class="form-field">time :</div>
+        <input type="radio" name="time" value="EIGHT_TEN_PM"><span>EIGHT_TEN_PM</span>
+        <input type="radio" name="time" value="TEN_TWELVE_PM"><span>TEN_TWELVE_PM</span>
+        <input type="radio" name="time" value="TWELVE_TWO_AM"><span>TWELVE_TWO_AM</span>
+        <br>
+        <input type="radio" name="time" value="TWO_FOUR_AM"><span>TWO_FOUR_AM</span>
+        <input type="radio" name="time" value="FOUR_SIX_AM"><span>FOUR_SIX_AM</span>
+        <input type="radio" name="time" value="SIX_EIGHT_AM"><span>SIX_EIGHT_AM</span>
+
+        <div class="form-field">isSeaBoat :</div>
+        <input type="checkbox" name="is-seaBoat">
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="submit">submit</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="alert-form" id="alert-form">
+        <div class="form-field">notes :</div>
+        <textarea cols="100" rows="15" name="notes"></textarea>
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="submit">submit</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="boats-choice-list" id="boats-choice-list">
+        <br>
+        <button class="red-small-button" name="none">none</button>
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>serialNumber</th>
+                <th>name</th>
+                <th>type</th>
+                <th>is Owned</th>
+                <th>is Coxswain</th>
+                <th>is Sea Boat</th>
+                <th>is Wide Boat</th>
+                <th>is Disabled</th>
+                <th>select</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="reg-form" id="add-reg-form">
+        <div class="form-field">type :</div>
+        <input type="radio" name="type" value="SINGLE"><span>SINGLE</span>
+        <input type="radio" name="type" value="DOUBLE"><span>DOUBLE</span>
+        <input type="radio" name="type" value="DOUBLE_ONE_PADDLE"><span>DOUBLE_ONE_PADDLE</span>
+        <br>
+        <input type="radio" name="type" value="QUARTET"><span>QUARTET</span>
+        <input type="radio" name="type" value="QUARTET_ONE_PADDLE"><span>QUARTET_ONE_PADDLE</span>
+        <input type="radio" name="type" value="EIGHT"><span>EIGHT</span>
+        <input type="radio" name="type" value="EIGHT_ONE_PADDLE" checked="true"><span>EIGHT_ONE_PADDLE</span>
+
+        <div class="form-field">requestedDate :</div>
+        <input type="date" name="date">
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="next">next</button>
+    </div>
+
+    <div class="windows-choice-list" id="add-windows-choice-list">
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>name</th>
+                <th>select</th>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <button class="red-small-button" name="back">back</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="members-choice-list" id="add-members-choice-list">
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>select</th>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <button class="red-small-button" name="back">back</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="reg-form" id="edit-reg-form">
+        <div class="form-field">requestedDate :</div>
+        <input type="date" name="date">
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="next">next</button>
+    </div>
+
+    <div class="windows-choice-list" id="edit-windows-choice-list">
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>name</th>
+                <th>select</th>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <button class="red-small-button" name="back">back</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="friends-list" id="friends-list">
+    <br>
+    <br>
+    <table name="table">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>action</th>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <div class="hidden-form-field" name="hidden-feedback"></div>
+</div>
+
+    <div class="types-list" id="types-list">
+        <br>
+        <br>
+        <table name="table">
+            <tr>
+                <th>type</th>
+                <th>action</th>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="reg-form" id="duplicate-reg-form">
+        <div class="form-field">requestedDate :</div>
+        <input type="date" name="date">
+
+        <br>
+        <br>
+
+        <button class="green-small-button" name="duplicate">duplicate</button>
+        <br>
+        <br>
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+    <div class="boats-choice-list" id="place-boats-choice-list">
+        <br>
+        <table name="table">
+            <tr>
+                <th>serialNumber</th>
+                <th>name</th>
+                <th>type</th>
+                <th>is Owned</th>
+                <th>is Coxswain</th>
+                <th>is Sea Boat</th>
+                <th>is Wide Boat</th>
+                <th>is Disabled</th>
+                <th>select</th>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <div class="hidden-form-field" name="hidden-feedback"></div>
+    </div>
+
+</div>
+
+<script src="menu.js"></script>
+<script src="details.js"></script>
+<script src="members.js"></script>
+<script src="boats.js"></script>
+<script src="windows.js"></script>
+<script src="regs.js"></script>
+<script src="placements.js"></script>
+<script src="alerts.js"></script>
+
+</body>
+</html>

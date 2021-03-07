@@ -1,0 +1,25 @@
+.title{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 150px;
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: lightgrey;
+}
+
+.text{
+    position: absolute;
+    top: 150px;
+    left: 265px;
+
+    width:1060px;
+    min-height: 700px;
+    padding: 5px;
+    background-color: lightcoral;
+    color: black;
+    font-size: 18px;
+}
