@@ -12,6 +12,10 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Project4" />
+          <element id="module-output" name="Engine" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/Libraries/gson-2.8.6.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
