@@ -1,4 +1,4 @@
-# Boothouse-Management-System <br/>
+# Boathouse-Management-System <br/>
 Web Application <br/>
 <br/>
 As a part of my academic studies , <br/>
